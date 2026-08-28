@@ -1,17 +1,58 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Your Perfect Day — A Personality Quiz</title>
-    <link rel="stylesheet" href="./style.css" />
-    <meta property="og:image" content="https://bolt.new/static/og_default.png">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="https://bolt.new/static/og_default.png">
-</head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="./main.js"></script>
-  </body>
-</html>
+<!DOCTYPE html>
 
+<html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Your Perfect Day Personality Quiz</title>
+
+<!-- Link to CSS -->
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<main class="quiz-container">
+
+    <!-- START SCREEN -->
+    <section id="start-screen">
+        <h1>☀️ Your Perfect Day ☀️</h1>
+
+      <p class="intro">
+        today is your perfect day! answer the following questions so that we can judge u for that 
+      </p> <button class="restart-btn" onclick="startQuiz()"> Start your perfect day 
+      </button> 
+    </section>
+
+  <!-- QUIZ SCREEN -->
+  <section id="quiz-screen" class="hidden"> 
+    <div class="progress-container">
+      <div class="progress-bar" id="progress-bar"></div> 
+    </div>
+    
+    <div class="question-number" id="question-number"></div> 
+    
+    <h2 id="question-text"></h2>
+
+    <div class="answers" id="answers"></div>
+  </section>
+  
+  <!-- RESULT SCREEN --> 
+  <section id="result-screen" class="hidden">
+   
+    <div class="result-emoji" id="result-emoji"></div>
+   
+    <h1 class="result-title" id="result-title"></h1> 
+    
+    <p class="result-description" id="result-description"></p> 
+   
+    <button class="restart-btn" onclick="restartQuiz()">
+      Take the quiz again 
+    </button>
+     </section>
+
+</main>
+
+<!-- Link to JavaScript -->
+<script src="main.js"></script>
+
+</body> </html>
