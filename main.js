@@ -110,6 +110,12 @@ const personalities = [
   description: "you know how to enjoy the simple things in life. good food, cosy spaces, and feeling safe and comfortable are basically your love language. you're probably the person everyone wants to hang out with when they need a calm, wholesome day."
 }, 
 
+ {
+   title: "The Social Butterfly 🦋",
+   description:
+        "your perfect day is even better when other people are involved! you're friendly, expressive, and you probably collect memories through conversations and shared experiences. life is just more fun when there's someone around to laugh with."
+},
+
   {
     title: "The Aesthetic Dreamer ", 
     description: "you notice beauty everywhere. sunsets, music, outfits, pretty cafés — all of it matters to you! you like making ordinary moments feel special and you probably have a strong imagination. your life may not always be a movie, but you definitely know how to make it feel like one." 
@@ -233,7 +239,7 @@ function showResult() {
 document.getElementById("progress-bar").style.width = "100%";
 
   // Find the highest
-  score const highestScore = Math.max(...scores);
+   const highestScore = Math.max(...scores);
 
 // Find every personality that has the highest score
   const winners = []; 
