@@ -1,3 +1,4 @@
+/* ------------------------------------------------
 PERSONALITY QUIZ
 ------------------------------------------------ */
 
@@ -16,9 +17,10 @@ const questions = [
          { text: " shower and pick your outfit for the day", type: 3 },
          { text: " read your favourite novel/book", type: 4 }, 
          { text: " stare at the wall", type: 5 } 
-      },
+     ],
      
-      { 
+},
+    {
           
           question: "time to eat! pick your option", 
           answers: [
@@ -42,40 +44,48 @@ const questions = [
       { text: " learn new things or just around and craft", type: 4 },
       { text: " NOTHING.", type: 5 } 
     ] 
+ 
   },
 
-  { 
-    question: "crap. your plans suddenly get cancelled. how do u react?", 
-    answers: [ { text: " make new plans immediately", type: 0 },
+ 
+    { 
+    
+      question: "crap. your plans suddenly get cancelled. how do u react?", 
+      answers: [ 
+              { text: " make new plans immediately", type: 0 },
               { text: " oh thankGod", type: 1 }, 
               { text: " message everyone until somebody is free", type: 2 },
               { text: " use the unexpected free time to do something fun for myself", type: 3 },
               { text: " hang out by myself", type: 4 }, 
               { text: " accept it. the universe has spoken.", type: 5 } 
              ] 
-  },
 
-  {
-    question: "the sun is starting to set. what is your ideal evening?",
-    answers: [ 
-      { text: " one last adventure before the day ends", type: 0 },
-      { text: " blankets, snacks, and a good movie", type: 1 },
-      { text: " going out with friends", type: 2 },
-      { text: "watching the sunset somewhere beautiful", type: 3 }, 
-      { text: "wind down and think about life/how i spent the day", type: 4 }, 
-      { text: " can u please stop asking me questions?", type: 5 } 
-    ] 
-  },
+    },
 
-  {
-    question: "time to sleep. How do u get ready for bed?",
-    answers: [
-        { text: " think about all the things im gonna do tommorrow!", type: 0 },
-        { text: " snuggling down in as many balnkets and pillows as possible.", type: 1 },
-        { text: " texting everyone goodnight.", type: 2 },
-        { text: "doing skincare.", type: 3 },
-        { text: "making up fake scenraios in my head.", type: 4 },
-        { text: "staring into the void until i pass out.", type: 5 }
+  
+    {
+      question: "the sun is starting to set. what is your ideal evening?",
+      answers: [ 
+              { text: " one last adventure before the day ends", type: 0 },
+              { text: " blankets, snacks, and a good movie", type: 1 },
+              { text: " going out with friends", type: 2 },
+              { text: "watching the sunset somewhere beautiful", type: 3 }, 
+              { text: "wind down and think about life/how i spent the day", type: 4 }, 
+              { text: " can u please stop asking me questions?", type: 5 } 
+       ] 
+ 
+    },
+
+ 
+    {
+      question: "time to sleep. How do u get ready for bed?",
+      answers: [
+            { text: " think about all the things im gonna do tommorrow!", type: 0 },
+            { text: " snuggling down in as many balnkets and pillows as possible.", type: 1 },
+            { text: " texting everyone goodnight.", type: 2 },
+            { text: "doing skincare.", type: 3 },
+            { text: "making up fake scenraios in my head.", type: 4 },
+            { text: "staring into the void until i pass out.", type: 5 }
     ]
 }
 
@@ -88,14 +98,14 @@ PERSONALITY RESULTS
 const personalities = [
 
 {
-    title: "The Go-Getter 🔥",
+    title: "The Go-Getter ",
     description:
         "you are energetic, determined, and always ready to do something! you probably hate feeling like you're wasting your time, and you're happiest when you're working towards something exciting. you bring energy wherever you go — sometimes you just need to remember that resting is also an achievement!"
 },
 
 
 { 
-  title: "The Comfort Lover ☕", 
+  title: "The Comfort Lover ", 
   description: "you know how to enjoy the simple things in life. good food, cosy spaces, and feeling safe and comfortable are basically your love language. you're probably the person everyone wants to hang out with when they need a calm, wholesome day."
 }, 
 
@@ -113,6 +123,7 @@ const personalities = [
     title: "The Peaceful Observer ",
     description: "you don't always need constant excitement to have a good time. you appreciate quiet moments, your own thoughts, and simply existing without having to be doing something every second. you're calm, thoughtful, and probably understand the beauty of doing absolutely nothing." 
   }
+
 ];
 
 /* ------------------------------------------------
@@ -154,17 +165,27 @@ document.getElementById("question-text").textContent =
 // Clear previous answers
 const answersContainer = 
   document.getElementById("answers"); 
-  answersContainer.innerHTML = "";
+ 
+    
+answersContainer.innerHTML = "";
   
   // Create answer buttons 
   question.answers.forEach(answer => {
-    const button = document.createElement("button");
-    button.textContent = answer.text;
-    button.classList.add("answer-btn");
-    button.addEventListener("click", function () { 
-      selectAnswer(answer.type); 
+    
+      const button = document.createElement("button");
+   
+      button.textContent = answer.text;
+   
+      button.classList.add("answer-btn");
+   
+      button.addEventListener("click", function () { 
+     
+          selectAnswer(answer.type); 
+          
     });
-    answersContainer.appendChild(button); 
+    
+      answersContainer.appendChild(button); 
+      
   });
 
   // Update progress bar
@@ -190,7 +211,8 @@ currentQuestion++;
 
   // Check whether the quiz has finished 
   if (currentQuestion < questions.length) {
-    showQuestion();
+    
+      showQuestion();
 
 } else {
 
@@ -213,18 +235,27 @@ document.getElementById("progress-bar").style.width = "100%";
   score const highestScore = Math.max(...scores);
 
 // Find every personality that has the highest score
-  const winners = []; for (let i = 0; i < scores.length; i++) { 
-    if (scores[i] === highestScore) { winners.push(i); 
+  const winners = []; 
+    
+    for (let i = 0; i < scores.length; i++) { 
+    
+        if (scores[i] === highestScore) {
+            
+            winners.push(i);  
+            
       } 
+        
   }
 
   // Randomly choose if there is a tie 
   const winner = 
     winners[Math.floor(Math.random() * winners.length)];
+    
   const personality = personalities[winner];
 
   // Hide quiz and show results 
   document.getElementById("quiz-screen").classList.add("hidden");
+    
   document.getElementById("result-screen").classList.remove("hidden");
 
   // Display the personality
