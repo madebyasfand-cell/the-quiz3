@@ -16,9 +16,9 @@
 
 * {
   box-sizing: border-box;
-  marp');
-
-:root {
+  margin: 0;
+  padding: 0;
+}
 
 html, body {
   min-height: 100vh;
@@ -289,5 +289,9 @@ body::before {
   }
 }
 
+
+
+
+ 
 
  
