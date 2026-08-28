@@ -10,7 +10,7 @@ QUESTIONS
 const questions = [
 
 {
-    question: "u have just woken up. what is the first thing u do?", 
+    question: "You have just woken up. What is the first thing u do?", 
     answers: [ 
          { text: " exercise", type: 0 },
          { text: " have a good breakfast", type: 1 }, 
@@ -23,7 +23,7 @@ const questions = [
 },
     {
           
-          question: "time to eat! pick your option", 
+          question: "Time to eat! pick your option", 
           answers: [
             { text: " something healthy and energising", type: 0 }, 
             { text: " a big, comforting meal", type: 1 },
@@ -36,14 +36,14 @@ const questions = [
 
   { 
     
-    question: "u suddenly have the entire afternoon free. what are u doing?", 
+    question: "So, where are you going today?", 
     answers: [
-      { text: " doing something productive or active", type: 0 },
-      { text: " relaxing with snacks and a comfort show", type: 1 }, 
-      { text: " calling everyone and making spontaneous plans", type: 2 }, 
-      { text: " taking pictures and enjoying the atmosphere", type: 3 },
-      { text: " learn new things or just around and craft", type: 4 },
-      { text: " NOTHING.", type: 5 } 
+      { text: " Some workshop, gym or park", type: 0 },
+      { text: " relaxing at home with snacks and a comfort show", type: 1 }, 
+      { text: " Hanging out with friends, ofcourse.", type: 2 }, 
+      { text: " Going shopping for clothes, or anything else i might need", type: 3 },
+      { text: " Going to a craft or book store(you can never have enough books", type: 4 },
+      { text: " NOWHERE. I WILL BE ROTTING IN BED", type: 5 } 
     ] 
  
   },
@@ -51,7 +51,7 @@ const questions = [
  
     { 
     
-      question: "crap. your plans suddenly get cancelled. how do u react?", 
+      question: "Crap. your plans suddenly get cancelled. how do u react?", 
       answers: [ 
               { text: " make new plans immediately", type: 0 },
               { text: " oh thankGod", type: 1 }, 
@@ -65,7 +65,7 @@ const questions = [
 
   
     {
-      question: "the sun is starting to set. what is your ideal evening?",
+      question: "The sun is starting to set. What is your ideal evening?",
       answers: [ 
               { text: " one last adventure before the day ends", type: 0 },
               { text: " blankets, snacks, and a good movie", type: 1 },
@@ -79,7 +79,7 @@ const questions = [
 
  
     {
-      question: "time to sleep. How do u get ready for bed?",
+      question: "Time to sleep. How do u get ready for bed?",
       answers: [
             { text: " think about all the things im gonna do tommorrow!", type: 0 },
             { text: " snuggling down in as many balnkets and pillows as possible.", type: 1 },
@@ -99,21 +99,21 @@ PERSONALITY RESULTS
 const personalities = [
 
 {
-    title: "The Go-Getter ",
+    title: "Very productive ",
     description:
-        "you are energetic, determined, and always ready to do something! you probably hate feeling like you're wasting your time, and you're happiest when you're working towards something exciting. you bring energy wherever you go — sometimes you just need to remember that resting is also an achievement!"
+        "you are very bubbly and energetic. You try to take care of your body whenever you can. If you were a colour, you would be yellow. You may not always have your life together, but you try to have control as much as you can!"
 },
 
 
 { 
   title: "The Comfort Lover ", 
-  description: "you know how to enjoy the simple things in life. good food, cosy spaces, and feeling safe and comfortable are basically your love language. you're probably the person everyone wants to hang out with when they need a calm, wholesome day."
+  description: "you know how to enjoy the simple things in life. good food, cosy spaces, and feeling safe and comfortable are basically your love language. you may or may not be an introvert or an ambivert. You like creating your little bubble and staying in it."
 }, 
 
  {
-   title: "The Social Butterfly 🦋",
+   title: "The Social Butterfly ",
    description:
-        "your perfect day is even better when other people are involved! you're friendly, expressive, and you probably collect memories through conversations and shared experiences. life is just more fun when there's someone around to laugh with."
+        "your perfect day is even better when other people are involved! you're friendly, expressive, and you probably collect memories through conversations and shared experiences. You love to be around people and people love to be around you! your probably very trendy."
 },
 
   {
@@ -123,12 +123,12 @@ const personalities = [
 
   { 
     title: "The Curious Thinker ",
-    description: "your brain is always asking questions. you enjoy learning, discovering new things, and thinking about ideas that other people might not even notice. you're curious about the world and probably have at least one extremely random fact ready to share." 
+    description: "your an artist deep down. You love to create ad think and overthink, then think some more. You can enjoy the loud moments in life and the soft ones too." 
   },
 
   {
     title: "The Peaceful Observer ",
-    description: "you don't always need constant excitement to have a good time. you appreciate quiet moments, your own thoughts, and simply existing without having to be doing something every second. you're calm, thoughtful, and probably understand the beauty of doing absolutely nothing." 
+    description: "It's okay. Life happens. I, too, sometimes wish i could ignore my responsiblities." 
   }
 
 ];
