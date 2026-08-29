@@ -111,23 +111,23 @@ const personalities = [
 }, 
 
  {
-   title: "The Social Butterfly ",
+   title: "The extrovert ",
    description:
         "your perfect day is even better when other people are involved! you're friendly, expressive, and you probably collect memories through conversations and shared experiences. You love to be around people and people love to be around you! your probably very trendy."
 },
 
   {
-    title: "The Aesthetic Dreamer ", 
+    title: "The romantic ", 
     description: "you notice beauty everywhere. sunsets, music, outfits, pretty cafés — all of it matters to you! you like making ordinary moments feel special and you probably have a strong imagination. your life may not always be a movie, but you definitely know how to make it feel like one." 
   },
 
   { 
-    title: "The Curious Thinker ",
+    title: "The Artist ",
     description: "your an artist deep down. You love to create ad think and overthink, then think some more. You can enjoy the loud moments in life and the soft ones too." 
   },
 
   {
-    title: "The Peaceful Observer ",
+    title: "The Void ",
     description: "It's okay. Life happens. I, too, sometimes wish i could ignore my responsiblities." 
   }
 
