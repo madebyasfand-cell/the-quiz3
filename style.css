@@ -12,10 +12,10 @@ min-height: 100vh;
 font-family: Arial, Helvetica, sans-serif;
 background: linear-gradient(
 180deg,
-#ff4f9a 0%,
-#ff7b54 35%,
-#ffb347 65%,
-#ffe66d 100%
+#9FA1FF 0%,
+#B5BAFF 35%,
+#AEE2FF 65%,
+#D9F9DF 100%
 );
 color: #5a1647;
 display: flex;
