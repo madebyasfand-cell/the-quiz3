@@ -148,9 +148,6 @@ transform: scale(1.05);
 box-shadow: 0 8px 20px rgba(214, 41, 118, 0.3);
 }
 
-/* -------------------------
-HIDE ELEMENTS
-------------------------- */
 
 .hidden {
 display: none;
